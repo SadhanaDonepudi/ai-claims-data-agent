@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-claims-data-agent"
+version = "0.1.0"
+description = "Plain-English querying of claims data: MCP tool server + guardrailed NL-to-SQL agent (local DuckDB replica; Claude/Athena in production)"
+requires-python = ">=3.11"
+dependencies = ["duckdb", "sqlglot", "pandas", "mcp==1.12.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,16 @@
+{
+  "total_questions": 60,
+  "correct": 58,
+  "accuracy_pct": 96.7,
+  "answered_questions": 56,
+  "answered_correct": 54,
+  "answered_accuracy_pct": 96.4,
+  "breakdown_agent_status": {
+    "answered": 55,
+    "blocked": 3,
+    "unsupported": 2,
+    "failed": 0
+  },
+  "backend": "rule-based (no LLM)",
+  "note": "Measured locally against the synthetic DuckDB replica. The 87% resume figure was for the original Claude-backed production version and is NOT this number."
+}
